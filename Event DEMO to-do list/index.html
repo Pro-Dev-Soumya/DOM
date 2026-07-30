@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css ">
+</head>
+
+<body style="background-color: black;">
+    <h1 style="color: aliceblue;">To-Do list</h1>
+
+    <div style="display: flex; border: 1px solid rgb(14, 127, 142);background-color: palevioletred;">
+        <div id="left" style="height: 80vh;width: 50vw; display: flex;  justify-content: center; align-items: center;">
+            <div style="border: 1px solid rgb(73, 184, 196); height: 40%; width: 60%;border-radius: 30px;padding: 50px;display: flex; flex-direction: column;justify-content: space-evenly; background-color: #ffc0cb;" >
+                <div style="display: flex; flex-direction: column;">
+                    <label >Title</label>
+                    <input type="text" name="" id="title">
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="">Discription</label>
+                    <textarea name="" id="desc"></textarea>
+                </div>
+                <button id="btn">Add task</button>
+            </div>
+        </div>
+
+
+
+
+        
+        <div id="right" style="width: 50vw;"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

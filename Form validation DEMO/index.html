@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msg{
+            color: red;
+            font-size: 8px;
+            display: none;
+            /* display: none; aur js me display block likh do  */
+
+            /* visibility: hidden; aur js me vissibiliy visible */
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <div>
+        <div>
+            <label for="">Username</label>
+            <input type="text" id="ip">
+            <p id="unmsg" class="msg">username must be 4-8 char</p>
+        </div>
+
+         <div>
+            <label for="">E-mail</label>
+            <input type="email" id="email">
+            <p id="emmsg" class="msg">pls enter valid email</p>
+        </div>
+
+         <div>
+            <label for="">Password</label>
+            <input type="password" id="password">
+            <p id="pwmsg" class="msg">pls enter strong password</p>
+        </div>
+
+         <div>
+            <label for="">Age</label>
+            <input type="number" id="age">
+            <p id="agemsg" class="msg">age must be 18 years</p>
+
+        </div>
+
+        <button id="btn">Submit</button>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my-card{
+            border: 1px solid rgb(142, 26, 26);
+            background-color: rgb(148, 148, 85);
+            border-radius: 5px;
+        }
+    </style>
+   
+</head>
+
+<body>
+    <h1 style="text-align: center;color: rgb(79, 21, 137);">Task Manager</h1>
+
+    <div id="ip-parent" style="display: flex;justify-content: center; gap: 20px;">
+        <input type="text" id="ip" style="width: 300px;">
+        <button id="btn">Add task</button>
+    </div>
+
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly; margin-top: 60px; ">
+
+        <section class="boxes" 
+            style=" border: 2px solid black; height: 500px; width: 300px; background-color: olive;">
+
+                <h1 style="text-align: center;">Pending</h1>
+
+               <div style="background-color: beige; height: 75%; border-radius: 30px;padding:15px 5px;display: flex;flex-direction: column;gap:5px ; overflow: scroll;" id="pending-card-container" class="abc"></div>
+
+        </section>
+        <section class="boxes"
+            style=" border: 2px solid black; height: 500px; width: 300px; background-color: palevioletred;">
+
+             <h1 style="text-align: center;">In-Progress</h1>
+
+                <div style="background-color: beige; height: 75%; border-radius: 30px;padding:15px 5px;overflow: scroll;" class="abc" id="progress-card-container"></div>
+
+        </section>
+
+        <section class="boxes"
+            style=" border: 2px solid #000000; height: 500px; width: 300px;background-color: rgb(76, 86, 202);">
+
+             <h1 style="text-align: center;">Completed</h1>
+
+             <div style="background-color: beige; height: 75%; border-radius: 30px;padding:15px 5px;overflow: scroll;" class="abc" id="completed-card-container"></div>
+        </section>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
